@@ -139,7 +139,6 @@ while True:
             print("Монстр напал! У тебя нет оружия - получил 20 урона!")
             hp = hp - 20
             print("Осталось HP:", hp)
-        pole[igrok_y][igrok_x] = "пусто"
         if hp <= 0:
             print("Монстр тебя победил... Игра проиграна.")
             break
@@ -154,7 +153,6 @@ while True:
             print("Ты открыл сундук. Внутри записка с кодом:", kod)
             inventar.append("записка с кодом")
             znaet_kod = True
-            pole[igrok_y][igrok_x] = "пусто"
         else:
             print("Это сундук. Он заперт. Нужен ключ!")
 
@@ -189,7 +187,6 @@ while True:
             print("Твоё оружие", oruzhie, "стало зачарованным!")
             print("Теперь монстры бьют тебя всего на 10!")
             zacharovano = True
-        pole[igrok_y][igrok_x] = "пусто"
 
     elif chto_tut == "аптечка":
         hp = hp + 30
