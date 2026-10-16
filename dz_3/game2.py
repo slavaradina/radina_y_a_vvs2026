@@ -18,23 +18,23 @@ for y in range(n):
 
 random.shuffle(vse_kletki)
 
-monstr  = random.randint(5, 15)   
-zoloto    = random.randint(2, 8)
-aptechka  = random.randint(1, 4)
+monstr = random.randint(5, 15)   
+zoloto = random.randint(2, 8)
+aptechka = random.randint(1, 4)
 
-poziciya_klucha        = vse_kletki.pop()
-poziciya_sunduka       = vse_kletki.pop()
-poziciya_dveri         = vse_kletki.pop()
-poziciya_mecha         = vse_kletki.pop()
-poziciya_ruzhya        = vse_kletki.pop()
+poziciya_klucha = vse_kletki.pop()
+poziciya_sunduka = vse_kletki.pop()
+poziciya_dveri = vse_kletki.pop()
+poziciya_mecha = vse_kletki.pop()
+poziciya_ruzhya = vse_kletki.pop()
 poziciya_zacharovaniya = vse_kletki.pop()
 
-pole[poziciya_klucha[1]][poziciya_klucha[0]]                 = "ключ"
-pole[poziciya_sunduka[1]][poziciya_sunduka[0]]               = "сундук"
-pole[poziciya_dveri[1]][poziciya_dveri[0]]                   = "дверь"
-pole[poziciya_mecha[1]][poziciya_mecha[0]]                   = "меч"
-pole[poziciya_ruzhya[1]][poziciya_ruzhya[0]]                 = "ружьё"
-pole[poziciya_zacharovaniya[1]][poziciya_zacharovaniya[0]]   = "зачарование"
+pole[poziciya_klucha[1]][poziciya_klucha[0]] = "ключ"
+pole[poziciya_sunduka[1]][poziciya_sunduka[0]] = "сундук"
+pole[poziciya_dveri[1]][poziciya_dveri[0]] = "дверь"
+pole[poziciya_mecha[1]][poziciya_mecha[0]] = "меч"
+pole[poziciya_ruzhya[1]][poziciya_ruzhya[0]] = "ружьё"
+pole[poziciya_zacharovaniya[1]][poziciya_zacharovaniya[0]] = "зачарование"
 
 for i in range(monstr):
     p = vse_kletki.pop()
@@ -79,8 +79,8 @@ print()
 print("Управление: w - вверх, s - вниз, a - влево, d - вправо")
 print()
 print("Что бывает в комнатах:")
-print("  монстр      - нападает: 20 урона без оружия,")
-print("                15 с оружием, 10 с зачарованным")
+print("  монстр - нападает: 20 урона без оружия,")
+print("           15 с оружием, 10 с зачарованным")
 print("  меч, ружьё  - оружие (урон от монстров меньше)")
 print("  зачарование - усиливает оружие (урон монстра ещё меньше)")
 print("  аптечка     - восстанавливает +30 HP")
